@@ -1,0 +1,159 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main {
+    display: flex;
+    height: 200vh;
+    flex-direction: column;
+}
+section {
+    display: flex;
+
+}
+.card {
+    margin: 5px;
+    padding: 100px;
+    width: 5vh;
+    height: 5vh;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(220, 20, 60);
+}
+
+.card2{
+    margin: 5px;
+    padding: 100px;
+    height: 5vh;
+    width: 5vh;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(20, 220, 153);
+}
+
+.contenedor{
+    background-color: rgb(20, 30, 220);
+    border: 1px solid rgb(0, 0, 0);
+    width: 50vh;
+    height: 50vh;
+}
+
+
+.btn{
+    background-color: rgb(20, 30, 220);
+    color: white;
+}
+
+
+.usuario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    width: 5vh;
+    height: 5vh;
+    background-color: rgb(22, 21, 21);
+    color: white;
+    margin: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.animation {
+    animation: example-animation 3s linear infinite;
+    color: rgb(74, 250, 35);
+  }
+
+.animationBg {
+    animation: animationBG 3s linear infinite;
+}
+
+
+
+  @keyframes example-animation {
+    0% {
+        color: rgb(89, 0, 255);
+    }
+    20% {
+        color: orange;
+    }
+    40% {
+        color: red;
+    }
+    60% {
+        color: orange;
+    }
+    80% {
+        color: rgb(89, 0, 255);
+    }
+    100% {
+        color: red;
+    }
+  }
+
+
+
+  @keyframes animationBG {
+    0% {
+        background-color: rgb(89, 0, 255);
+    }
+    20% {
+        background-color: orange;
+    }
+    40% {
+        background-color: red;
+    }
+    60% {
+        background-color: orange;
+    }
+    80% {
+        background-color: rgb(89, 0, 255);
+    }
+    100% {
+        background-color: red;
+    }
+  }
+ 
+ 

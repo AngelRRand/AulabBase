@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dashboard</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1>Dashboard</h1>
+            <ul class="infoNavbar">
+                <li>About</li>
+                <div>
+                    <input type="text" id="buscador">
+                    <button class="btnNav" id="btnBuscador">Buscar</button>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="filters">
+
+            <select name="filtradoEdad" id="filtradoEdad">
+                <option value="default">Edad</option>
+                <option value="0 - 5">0 - 5</option>
+                <option value="5 - 20">5 - 20</option>
+                <option value="20 - 30">20 - 30</option>
+                <option value="30 - 50">30 - 50</option>
+                <option value="50 - 80">50 - 80</option>
+            </select>
+
+            <select name="filtradoGenero" id="filtradoGenero">
+                <option value="default">Genero</option>
+                <option value="male">Hombre</option>
+                <option value="female">Mujer</option>
+            </select>
+
+        </section>
+
+        <!-- Usuarios -->
+        <section class="contenedorCards">
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>facebook</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+        </ul>
+    </footer>
+
+    <script src="data.js"></script>
+</body>
+</html>
