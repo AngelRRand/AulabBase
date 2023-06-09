@@ -32,3 +32,28 @@
 
 //5-Crea cuatro cards que representen un producto del mercado en el que se muestre:el nombre del producto, precio, nombre de la tienda, saber más. A través del DOM manipulation.
 //Tu codigo aqui:
+
+let contenedor = document.querySelector('main')
+
+let productos = [
+    {nombre: 'camisa', precio: 300, nombreTienda: 'max'},
+    {nombre: 'remera', precio: 500, nombreTienda: 'max'},
+    {nombre: 'chaleco', precio: 600, nombreTienda: 'max'},
+    {nombre: 'pantalon', precio: 700, nombreTienda: 'max'},
+    {nombre: 'corbata', precio: 800, nombreTienda: 'max'}
+]
+
+productos.forEach(element => {
+
+    let producto = document.createElement('div')
+
+    producto.classList.add('contenedor')
+    
+    producto.innerHTML = `
+    <h4>${element.nombre}</h4>
+    <p>${element.precio}</p>
+    <p>${element.nombreTienda}</p>
+    `
+
+    contenedor.appendChild(producto)
+});
