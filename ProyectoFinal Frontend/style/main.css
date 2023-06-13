@@ -3,6 +3,8 @@
     margin: 0 5vw;
     max-width: 100vw;
     flex-direction: column;
+    box-sizing: border-box;
+
 }
 .main_top{
     display: flex;
@@ -51,7 +53,10 @@
     justify-content: space-evenly;
     
 }
-
+.main_center_categorias select{
+    text-align: center;
+    padding: 0;
+}
 
 
 .btn_categories{
@@ -69,6 +74,17 @@
 }
 
 /* =======================LISTA CATEGORIAS================ */
+.icon_categoria{
+    width: 7vw;
+    height: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px dashed var(--principal);
+    color: var(--principal);
+    font-size: 1.7rem;
+}
 .main_center_lista{
     display: flex;
     flex-direction: column;
@@ -110,9 +126,20 @@
 .main_article p{
     color: var(--principal);
 }
+.main_article span{
+    color: var(--principal);
+
+}
 .main_article:hover{
     color: white;
     background-color: var(--principal);
+}
+
+.main_article:hover .icon_categoria{
+    background-color: white;
+}
+.main_article:hover span{
+    color: white;
 }
 
 /*================ FORMULARIO =======================*/

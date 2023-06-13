@@ -1,0 +1,71 @@
+.main{
+    display: flex;
+    margin: 0 5vw;
+    max-width: 100vw;
+    flex-direction: column;
+    box-sizing: border-box;
+
+}
+.main_top_anuncios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+}
+.main_top_anuncios img{
+    overflow: hidden;
+    width: 100vw;
+    filter: opacity(0.7);
+    z-index: 1;
+}
+.main_top_title{
+    width: 100vw;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main_top_title h1{
+    color: rgb(20, 20, 20);
+    font-size: 3rem;
+}
+.main_top_title b{
+    font-size: 3.3rem;
+    color: var(--principal);
+}
+
+.main_filter_anuncios{
+    position: absolute;
+    bottom: -10%;
+    background-color:  var(--principal);
+    border-radius: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 4vw 1vw;
+    height: 22vh;
+}
+.filterado_top{
+    display: flex;
+}
+.filterado_top input, select{
+    margin: 0 0.5vw;
+}
+.filterado_top div {
+    background-color: var(--secundario);
+}
+.filterado_top a{
+    color: white;
+}
+.filterado_bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+.filterado_bottom select{
+    margin-top: 15px;
+}

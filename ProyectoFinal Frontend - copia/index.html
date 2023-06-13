@@ -6,21 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'
+    integrity='sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=='
+    crossorigin='anonymous' />
+    
     <title>Rapido</title>
-
-    <!-- Importar iconos -->
-    <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="/style/globalStyles.css">
-    <link rel="stylesheet" href="/style/nav.css">
-    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="./style/globalStyles.css">
+    <link rel="stylesheet" href="./style/nav.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/footer.css">
 </head>
 
 <body>
     <header>
         <nav class="nav">
 
-            <h2>Rapido.es</h2>
+            <h2><i class="fa fa-bank"></i>Rapido.es</h2>
             <ol class="nav_ol">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Anuncios</a></li>
@@ -35,6 +36,7 @@
     </header>
 
     <main class="main">
+
 
         <div class="main_top">
             <div class="main_text_top">
@@ -55,15 +57,12 @@
                 </p>
             </div>
             <div class="circulo circulo2">
-                <p>
-                    <i class="fas fa-arrow-left"></i>
-                </p>
+                <i class="fas fa-arrow-left"></i>
             </div>
         </div>
 
 
         <div class="main_center">
-
             <div class="main_center_categorias">
                 <input placeholder="Buscar" class="selector" type="text">
                 <select class="selector" name="selector" id="selector">
@@ -78,8 +77,8 @@
                 </div>
             </div>
 
-            <div class="main_center_lista">
-                <h2 class="titulosH2" id="categorias">Nuestras <b>Categorías</b></h2>
+            <div class="main_center_lista titulo">
+                <h2 id="categorias">Nuestras <b>Categorías</b></h2>
                 <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod
                     sit. Ipsum diam justo sed rebum vero dolor duo.</p>
 
@@ -117,77 +116,214 @@
                         <span>123 anuncios</span>
                     </article class="main_article">
                 </section>
-
             </div>
 
             <div class="main_center_formulario">
                 <div class="main_formulario_forma"></div>
                 <div class="main_formulario">
                     <img src="https://www.epitech-it.es/wp-content/uploads/2021/01/cuantos-lenguajes-de-programacion-existen-1536x864.jpg"
-                        alt="">
-
-                    <section>
-                        <h2 class="titulosH2">Trabaja con <b>nosotros</b></h2>
-                        <p>Envía tu solicitud para formar parte del equipo de Rapido.es</p>
+                        alt="oficina">
+                    <section class="titulo">
+                        <h2>Trabaja con <b>nosotros</b></h2>
+                        <p>Envia tu solicitud para formar para de nuestro equipo</p>
                         <form action="">
-                            <input placeholder="Nombre" class="main_formulario_selector" type="text">
-                            <input placeholder="Email" class="main_formulario_selector" type="text">
-                            <textarea placeholder="Carta de presentacion" class="main_formulario_selector" name="" id=""
-                                cols="30" rows="10"></textarea>
-                            <div class=" btn"><a href="#" id="text_btn">Enviar la solicitud</a></div>
+                            <input class="formulario_input" type="text" placeholder="Nombre">
+                            <input class="formulario_input" type="text" placeholder="Email">
+                            <Textarea class="formulario_input" placeholder="Carta de presentacion" cols="30"
+                                rows="10"></Textarea>
+                            <div class="btn"><a href="#" id="text_btn">Crear Cuenta</a></div>
                         </form>
                     </section>
                 </div>
             </div>
 
-            <div class="main_center_anuncios">
-                <h2 class="titulosH2">Últimos <b>anuncios</b></h2>
+            <div class="main_center_anuncios titulo">
+                <h2>Nuestros nuevos <b>anuncios</b></h2>
                 <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod
                     sit. Ipsum diam justo sed rebum vero dolor duo.</p>
                 <div class="main_anuncios">
+
                     <article class="contenedor_anuncio">
                         <img src="https://picsum.photos/560/340" alt="">
-                        <span class="anuncio_estado vendido">vendido</span>
+                        <span class="anuncio_estado disponible">Disponible</span>
                         <div class="anuncio_texto">
-
-                            <div>
-                                <h4>Titulo anuncio</h4>
-                                <span>descripcion</span>
-                                <span>1000$</span>
+                            <span class="anuncio_precio">1000$</span>
+                            <div class="anuncio_texto_top">
+                                <h4>Titulo de anuncio</h4>
+                                <span>Descripcion breve</span>
                             </div>
-                            <div>
-                                <span><i class="fa fa-tag"></i>Categoria</span>
-                                <span><i class="fa fa-calendar-day"></i>17/07/2022</span>
+                            <div class="anuncio_texto_bottom">
+                                <span>
+                                    <i class="fa fa-tag"></i>
+                                    Categoria
+                                </span>
+                                <span>
+                                    <i class="fa fa-calendar-day"></i>
+                                    09/06/2023
+                                </span>
                             </div>
                         </div>
                     </article>
 
                     <article class="contenedor_anuncio">
                         <img src="https://picsum.photos/560/340" alt="">
-                        <span class="anuncio_estado disponible">disponible</span>
+                        <span class="anuncio_estado disponible">Disponible</span>
                         <div class="anuncio_texto">
-                            <h4>Titulo anuncio</h4>
-                            <span>descripcion</span>
-                            <span>1000$</span>
-                            <div>
-                                <span><i class="fa fa-tag"></i>Categoria</span>
-                                <span><i class="fa fa-calendar-day"></i>17/07/2022</span>
+                            <span class="anuncio_precio">1000$</span>
+                            <div class="anuncio_texto_top">
+                                <h4>Titulo de anuncio</h4>
+                                <span>Descripcion breve</span>
+                            </div>
+                            <div class="anuncio_texto_bottom">
+                                <span>
+                                    <i class="fa fa-tag"></i>
+                                    Categoria
+                                </span>
+                                <span>
+                                    <i class="fa fa-calendar-day"></i>
+                                    09/06/2023
+                                </span>
                             </div>
                         </div>
                     </article>
+                    <article class="contenedor_anuncio">
+                        <img src="https://picsum.photos/560/340" alt="">
+                        <span class="anuncio_estado disponible">Disponible</span>
+                        <div class="anuncio_texto">
+                            <span class="anuncio_precio">1000$</span>
+                            <div class="anuncio_texto_top">
+                                <h4>Titulo de anuncio</h4>
+                                <span>Descripcion breve</span>
+                            </div>
+                            <div class="anuncio_texto_bottom">
+                                <span>
+                                    <i class="fa fa-tag"></i>
+                                    Categoria
+                                </span>
+                                <span>
+                                    <i class="fa fa-calendar-day"></i>
+                                    09/06/2023
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="contenedor_anuncio">
+                        <img src="https://picsum.photos/560/340" alt="">
+                        <span class="anuncio_estado disponible">Disponible</span>
+                        <div class="anuncio_texto">
+                            <span class="anuncio_precio">1000$</span>
+                            <div class="anuncio_texto_top">
+                                <h4>Titulo de anuncio</h4>
+                                <span>Descripcion breve</span>
+                            </div>
+                            <div class="anuncio_texto_bottom">
+                                <span>
+                                    <i class="fa fa-tag"></i>
+                                    Categoria
+                                </span>
+                                <span>
+                                    <i class="fa fa-calendar-day"></i>
+                                    09/06/2023
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="contenedor_anuncio">
+                        <img src="https://picsum.photos/560/340" alt="">
+                        <span class="anuncio_estado disponible">Disponible</span>
+                        <div class="anuncio_texto">
+                            <span class="anuncio_precio">1000$</span>
+                            <div class="anuncio_texto_top">
+                                <h4>Titulo de anuncio</h4>
+                                <span>Descripcion breve</span>
+                            </div>
+                            <div class="anuncio_texto_bottom">
+                                <span>
+                                    <i class="fa fa-tag"></i>
+                                    Categoria
+                                </span>
+                                <span>
+                                    <i class="fa fa-calendar-day"></i>
+                                    09/06/2023
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="contenedor_anuncio">
+                        <img src="https://picsum.photos/560/340" alt="">
+                        <span class="anuncio_estado disponible">Disponible</span>
+                        <div class="anuncio_texto">
+                            <span class="anuncio_precio">1000$</span>
+                            <div class="anuncio_texto_top">
+                                <h4>Titulo de anuncio</h4>
+                                <span>Descripcion breve</span>
+                            </div>
+                            <div class="anuncio_texto_bottom">
+                                <span>
+                                    <i class="fa fa-tag"></i>
+                                    Categoria
+                                </span>
+                                <span>
+                                    <i class="fa fa-calendar-day"></i>
+                                    09/06/2023
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
 
                 </div>
             </div>
-
         </div>
 
 
     </main>
-    <footer>
 
+    <footer>
+        <div class="footer">
+
+            <section class="footer_section">
+                <h4>Ponerse en contacto</h4>
+                <ol class="footer_section_left">
+                    <li><i class="fa fa-map"></i> 123 Street, New York, USA</li>
+                    <li><i class="fa fa-phone"></i> +012 345 67890</li>
+                    <li><i class="fa fa-envelope"></i> info@example.com</li>
+                </ol>
+                <div class="footer_section_icons">
+                    <div><i class="fa fa-facebook"></i></div>
+                    <div><i class="fa fa-twitter"></i></div>
+                    <div><i class="fa fa-linkedin"></i></div>
+                    <div><i class="fa fa-youtube"></i></div>
+                </div>
+
+
+            </section>
+            <section class="footer_section">
+                <h4>Enlaces rápidos</h4>
+                <ol class="footer_section_center">
+                    <li> <a href="#">Sobre Nosotros</a></li>
+                    <li> <a href="#">Mas Servicios</a> </li>
+                    <li> <a href="#">Politica</a></li>
+                    <li> <a href="#">Condiciones</a></li>
+                </ol>
+                <div></div>
+            </section>
+            <section class="footer_section">
+                <h4>Boletin informativo</h4>
+                <div class="footer_section_right">
+                    <span>Lorem ipsum dolor sit amet consectetur</span>
+                    <div class="input_footer">
+                        <input placeholder="email" type="text">
+                        <div class="btn footer_btn"><a href="#" id="text_btn">Comenzar</a></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <p class="footer_final">© Rapido.es, All Right Reserved. Copied By Marco Insabato</p>
     </footer>
 
-
+    <script src="./js/index.js"></script>
+    <script src="./js/scroll.js"></script>
 </body>
 
 </html>
