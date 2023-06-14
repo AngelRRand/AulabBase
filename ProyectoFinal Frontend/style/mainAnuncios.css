@@ -69,3 +69,10 @@
 .filterado_bottom select{
     margin-top: 15px;
 }
+
+
+.main_center_anuncios {
+    background-color: rebeccapurple;
+    height: 70vh;
+
+}

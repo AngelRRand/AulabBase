@@ -370,4 +370,3 @@ anuncios.forEach((element, i) => {
         contenedorHome.appendChild(article)
     }
 });
-console.log(anuncios)
