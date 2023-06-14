@@ -4,9 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icono de la web -->
+    <link rel="icon" href="../img/HTML.ico" type="image/svg+xml" >
+    <!-- Iconos Web -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'
         integrity='sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=='
         crossorigin='anonymous' />
+    <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
+
     <title>Rapido</title>
     <link rel="stylesheet" href="../style/globalStyles.css">
     <link rel="stylesheet" href="../style/nav.css">
@@ -33,41 +39,38 @@
         
         <div class="main_top_anuncios">
             <img src="https://elviajerofeliz.com/wp-content/uploads/2015/09/paisajes-de-Canada.jpg" alt="">
+            <div class="main_top_title">
+                <h1>Busca entre nuestros <b>Anuncios</b></h1>
+                <section class="main_filter_anuncios">
+                    <div class="filterado_top">
+                        <input placeholder="Buscar" class="selector" type="text" id="buscadorAnuncios">
+                        <select class="selector" name="" id="categoriasSelector">
+                            <option value="Todos">Selecciona una Categoria</option>
+                            
+                        </select>
+                        <input placeholder="Min" class="selector filtrado_mayor" type="number" id="min">
+                        <input placeholder="Max" class="selector filtrado_mayor" type="number" id="max">
+                        <div class="btn"><a href="#" id="filtrarAnuncios">Filtrar</a></div>
+                    </div>
+                    <div class="filterado_bottom">
+                        <select class="selector" name="" id="ordenar">
+                            <option value="Default">Ordena</option>
+                            <option value="Mas reciente">Mas reciente</option>
+                            <option value="Mas antiguo">Mas antiguo</option>
+                            <option value="Mayor costo">Mayor costo</option>
+                            <option value="Menor costo">Menor costo</option>
+                            <option value="A - Z">A - Z</option>
+                            <option value="Z- A">Z- A</option>
+                        </select>
+                    </div>
+    
+                </section>
+            </div>
         </div>
-        <div class="main_top_title">
-            <h1>Busca entre nuestros <b>Anuncios</b></h1>
-            <section class="main_filter_anuncios">
-                <div class="filterado_top">
-                    <input class="selector" type="text">
-                    <select class="selector" name="" id="">
-                        <option value="">Selecciona una Categoria</option>
-                        <option value="">Auto</option>
-                        <option value="">Remera</option>
-                        <option value="">Comida</option>
-                        <option value="">Comida</option>
-                        <option value="">Comida</option>
-                        <option value="">Remera</option>
-                        <option value="">Auto</option>
-                        <option value="">Auto</option>
-                    </select>
-                    <input class="selector filtrado_mayor" type="number">
-                    <input class="selector filtrado_mayor" type="number">
-                    <div class="btn"><a href="#" id="text_btn">Filtrar</a></div>
-                </div>
-                <div class="filterado_bottom">
-                    <select class="selector" name="" id="">
-                        <option value="">Ordena</option>
-                        <option value="">Mas reciente</option>
-                        <option value="">Mas antiguo</option>
-                        <option value="">Mayor costo</option>
-                        <option value="">Menor costo</option>
-                        <option value="">A - Z</option>
-                        <option value="">Z- A</option>
-                    </select>
-                </div>
+        <div class="main_anuncios anuncios_completo">
 
-            </section>
         </div>
+        
 
     </main>
     <footer>
@@ -112,8 +115,10 @@
         </div>
         <p class="footer_final">© Rapido.es, All Right Reserved. Copied By Marco Insabato</p>
     </footer>
-    <script src="./js/scroll.js"></script>
-    <script src="./js/anuncios.js"></script>
+
+    <script src="../js/arrayAnuncios.js"></script>
+    <script src="../js/scroll.js"></script>
+    <script src="../js/anuncios.js"></script>
 </body>
 
 </html>

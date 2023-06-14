@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icono de la web -->
 
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'
-        integrity='sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=='
-        crossorigin='anonymous' />
+    <link rel="icon" href="./img/HTML.ico" type="image/svg+xml" >
+
+    <!-- Iconos Web -->
+    
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css' integrity='sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==' crossorigin='anonymous' />
+    <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
+
 
     <title>Rapido</title>
     <link rel="stylesheet" href="./style/globalStyles.css">
@@ -18,9 +23,9 @@
 </head>
 
 <body>
+
     <header>
         <nav class="nav">
-
             <h2><i class="fa fa-bank"></i>Rapido.es</h2>
             <ol class="nav_ol">
                 <li><a href="#">Inicio</a></li>
@@ -31,13 +36,11 @@
                     <div class="btn"><a href="#" id="text_btn">Crear Cuenta</a></div>
                 </li>
             </ol>
-
         </nav>
     </header>
 
+
     <main class="main">
-
-
         <div class="main_top">
             <div class="main_text_top">
                 <h1>Encuentra las <b>mejores ofertas</b> en tu ciudad</h1>
@@ -65,11 +68,8 @@
         <div class="main_center">
             <div class="main_center_categorias">
                 <input placeholder="Buscar" class="selector" type="text">
-                <select class="selector" name="selector" id="selector">
+                <select class="selector" name="selector" id="categoriasSelector">
                     <option value="default">Seleccionar Categoria</option>
-                    <option value="one">Uno</option>
-                    <option value="two">Dos</option>
-                    <option value="three">Tres</option>
                 </select>
                 <input placeholder="Buscar" class="selector" type="text">
                 <div class="btn_categories">
@@ -115,7 +115,7 @@
                 <h2>Nuestros nuevos <b>anuncios</b></h2>
                 <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod
                     sit. Ipsum diam justo sed rebum vero dolor duo.</p>
-                <div class="main_anuncios">
+                <div class="main_anuncios anuncios_home">
 
                 </div>
             </div>
@@ -166,6 +166,7 @@
         </div>
         <p class="footer_final">© Rapido.es, All Right Reserved. Copied By Marco Insabato</p>
     </footer>
+    <script src="./js/arrayAnuncios.js"></script>
     <script src="./js/scroll.js"></script>
     <script src="./js/categorias.js"></script>
     <script src="./js/formulario.js"></script>

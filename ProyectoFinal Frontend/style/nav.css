@@ -17,6 +17,7 @@
 .navEvent{
     width: 100vw;
     margin: 0;
+    border-radius: 0rem;
 }
 .nav h2 {
     color: var(--principal);

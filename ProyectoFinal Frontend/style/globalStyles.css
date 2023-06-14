@@ -1,6 +1,6 @@
 :root {
-    --principal: rgb(187, 99, 228);
-    --secundario: rgb(38, 4, 52);
+    --principal: rgb(231, 56, 50);
+    --secundario: rgb(52, 4, 4);
 }
 
 * {
@@ -121,6 +121,14 @@ body {
 }
 
 /* =============Anuncios==================== */
+.main_anuncios{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    flex-wrap: wrap;
+}
 .contenedor_anuncio {
     position: relative;
     display: flex;

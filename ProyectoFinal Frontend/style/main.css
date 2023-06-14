@@ -210,11 +210,3 @@
     text-align: center;
     width: 60vw;
 }
-.main_anuncios{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10vh;
-    flex-wrap: wrap;
-}
