@@ -1,17 +1,17 @@
 :root {
     --principal: rgb(231, 56, 50);
     --secundario: rgb(52, 4, 4);
-    --blanco: rgb(238, 238, 238);
-    --blanco2: rgb(215, 215, 215);
-    --negro: rgb(31, 31, 31);
-    --negro2: rgb(39, 39, 39);
+    --white: rgb(250, 248, 248);
+    --white2: rgb(238, 238, 238);
+    --black: rgb(34, 34, 34);
+    --black2: rgb(44, 44, 44);
 }
 
-.dark {
-    --negro: rgb(238, 238, 238);
-    --negro2: rgb(215, 215, 215);
-    --blanco: rgb(31, 31, 31);
-    --blanco2: rgb(39, 39, 39);
+.dark{
+    --white: rgb(34, 34, 34);
+    --white2: rgb(44, 44, 44);
+    --black: rgb(250, 248, 248);
+    --black2: rgb(209, 208, 208);
 }
 
 * {
@@ -34,7 +34,7 @@
 }
 
 *::-webkit-scrollbar-track {
-    background: var(--blanco2);
+    background: #ffffff;
 }
 
 *::-webkit-scrollbar-thumb {
@@ -49,43 +49,13 @@ ol {
 }
 
 a {
-    color: var(--negro);
+    color: black;
     text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: var(--negro);
-}
-
-p,
-span {
-    color: var(--negro);
-}
-
-input,
-textarea {
-    color: var(--negro);
-    background-color: var(--blanco2);
-}
-
-select,
-option {
-    background-color: var(--blanco2);
-    color: var(--negro2);
 }
 
 body {
     overflow-x: hidden;
-    background-color: var(--blanco);
-}
-
-#luna {
-    color: var(--negro);
+    background-color: var(--white2);
 }
 
 .btn {
@@ -149,11 +119,9 @@ body {
 .selector:focus {
     outline: 3px solid var(--secundario);
 }
-
-.filtrado_mayor {
+.filtrado_mayor{
     width: 5vw;
 }
-
 .titulo h2 {
     font-size: 3rem;
     font-weight: lighter;
@@ -165,14 +133,14 @@ body {
 }
 
 /* =============Anuncios==================== */
-.main_anuncios {
+.main_anuncios{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-top: 10vh;
     flex-wrap: wrap;
 }
-
 .contenedor_anuncio {
     position: relative;
     display: flex;
@@ -184,6 +152,7 @@ body {
     overflow: hidden;
     border-radius: 1rem;
     transition: all 0.2s ease;
+
 }
 
 .contenedor_anuncio img {
@@ -224,8 +193,7 @@ body {
     height: 25vh;
     padding: 1vw;
     position: relative;
-    background-color: var(--blanco);
-
+    background-color: white;
 }
 
 .anuncio_precio {
@@ -271,78 +239,34 @@ body {
     color: var(--principal);
 }
 
-.requirido {
+.requirido{
     border-color: rgb(187, 128, 0);
 }
 
 
-/* ==================Responsive========================== */
+/* ***************************** Responsive  *********************************************/
 
-@media only screen and (max-width: 850px) {
-    .anuncio_texto {
-        height: 20vh;
-    }
 
-    .anuncio_texto_bottom span {
-        font-size: 0.7rem;
-    }
+@media only screen and (max-width: 1199px){
+
 }
 
-@media only screen and (max-width: 450px) {
-    .btn {
-        width: auto;
-    }
+@media only screen and (max-width: 991px){
+ 
 
-    .titulo {
-        width: auto;
-        text-align: center;
-    }
 
-    .titulo p {
-        font-size: 0.7rem;
-        width: 90vw;
-
-    }
-
-    .anuncio_texto {
-        height: 20vh;
-    }
-
-    .anuncio_texto_bottom span {
-        font-size: 0.7rem;
-    }
-
-    .main_anuncios {
-        flex-direction: column;
-    }
-
-    .contenedor_anuncio {
-        margin-top: 30px;
-        width: 70vw;
-    }
-
-    .anuncio_estado {
-        width: auto;
-        padding: 10px;
-    }
-
-    .anuncio_texto_bottom {
-        justify-content: space-around;
-        align-items: center;
-    }
-    .anuncio_texto_bottom span{
-        font-size: 1rem;
-        width: auto;
-    }
-    .selector{
-        width: auto;
-        height: auto;
-    }
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 767px){
+
     
-    .anuncio_texto_top h4{
-        font-size: 1.5rem;
-    }
 }
+@media only screen and (max-width: 575px){
+ 
+    
+}
+
+@media only screen and (max-width: 479px){
+   
+}
+

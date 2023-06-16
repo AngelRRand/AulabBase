@@ -72,36 +72,7 @@
 
 
 .main_center_anuncios {
-    
+    background-color: rebeccapurple;
     height: 70vh;
 
-}
-
-@media only screen and (max-width: 450px){
-    .main_top_anuncios{
-        height: 45vh;
-    }
-    .main_top_title{
-        height: 40vh;
-    }
-    .main_top_title h1{
-        text-align: center;
-        font-size: 1.3rem;
-    }   
-    .main_top_title h1 b{
-        font-size: 1.3rem;
-
-    }
-    .main_filter_anuncios{
-        bottom: -45%;
-        width: 100vw;
-        height: auto;
-        border-radius: 1rem;
-    }
-    .filterado_top{
-        flex-direction: column;
-    }
-    .filterado_top input, select{
-        width: auto;
-    }
 }
